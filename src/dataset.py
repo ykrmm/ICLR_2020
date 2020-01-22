@@ -8,6 +8,8 @@ from torchnlp.datasets import iwslt_dataset
 # LES DOSSIERS de-en et en-vi
 
 
+
+## DATASET DU PAPIER 
 train_en_to_vi = iwslt_dataset(
         directory='data/iwslt_2014_2015/',
         train=True,
@@ -51,6 +53,11 @@ test_de_to_en = iwslt_dataset(
         test_filename='{source}-{target}/IWSLT14.TED.tst2012.{source}-{target}.{lang}',
         check_files=['{source}-{target}/train.tags.{source}-{target}.{source}'],
         )
+
+
+## DATASET QU'ON VA EXPERIMENTER EN PLUS. 
+
+
 
 print('train english to vietnamise examples :')
 print(train_en_to_vi[:2])
